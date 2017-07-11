@@ -1,21 +1,23 @@
 # Git Study note
 
-git revert Vs reset
+## revert vs reset
 
-reset :
-#### reset
+### reset
+reset 원격지에 올리기 전에 만
+
+e.g.)
+``` git
 git log
 5
 4
 3 <-- 이 지점으로 돌아갈때 5,4 지우고
 2
 1
-git reset commitID --hard
+git reset "commit id" --hard
+```
 
-reset 원격지에 올리기 전에 만
-#####
-
-revert 지점으로 돌아가고 새로운 버전 생성
+### revert
+지점으로 돌아가고 새로운 버전 생성
 
 gistory 실행
 cmd
