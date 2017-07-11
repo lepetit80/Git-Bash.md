@@ -93,8 +93,13 @@ git pull, git push : 작업전/후
 ```
 id_rsa : private key
 id_rsa.pub : public key
-접속하고자 하는 원격 서버에 id_rsa.pub를 카피함.
+접속하고자 하는 원격 서버에 id_rsa.pub를 카피
 ```
 
 ## github > setting > ssh & GPG keys
 : "new ssh key"
+
+## git clone
+```
+$ git clone git@github.com:lepetit80/Git-Bash.md.git Git-Bash.md
+```
