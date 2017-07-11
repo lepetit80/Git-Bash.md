@@ -5,8 +5,7 @@
 ### reset
 reset 원격지에 올리기 전에 만
 
-e.g.)
-``` git
+```
 git log
 5
 4
@@ -34,7 +33,6 @@ $ git branch : 현재 브랜치를 확인한다.
 ## checkout
 $ git checkout exp : 현재 브랜치를 바탕으로 exp 브랜치를 만듦
 
-e.g.)
 ```
 $ git checkout master : 현재 브랜치에서 master 브랜치로 체크 아웃
 ```
