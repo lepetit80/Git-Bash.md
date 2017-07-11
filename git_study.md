@@ -20,23 +20,23 @@ git reset --hard commit_id
 : 해당 커밋 시점으로 되돌아가고 해당 커밋 이후의 커밋은 삭제
 현재 브랜치의 최신 커밋을 가리킴
 ```
-git reset --hard ORIG_HEAD : reset rollback
-git reflog
-git checkout 95c1bfa01dfa26ae4f790c8fd5eb5fb75ff61b1a
+$ git reset --hard ORIG_HEAD : reset rollback
+$ git reflog
+$ git checkout 95c1bfa01dfa26ae4f790c8fd5eb5fb75ff61b1a
 ```
 
 ### revert
 커밋 지점으로 돌아가고 새로운 버전 생성
 
 ### branch
-git branch : 현재 브랜치를 확인한다.
+$ git branch : 현재 브랜치를 확인한다.
 
 ## checkout
-git checkout exp : 현재 브랜치를 바탕으로 exp 브랜치를 만듦
+$ git checkout exp : 현재 브랜치를 바탕으로 exp 브랜치를 만듦
 
 e.g.)
 ```
-git checkout master : 현재 브랜치에서 master 브랜치로 체크 아웃
+$ git checkout master : 현재 브랜치에서 master 브랜치로 체크 아웃
 ```
 
 ## log
@@ -57,39 +57,41 @@ Deleted branch exp (was 0e0f985)
 ## stash
 stash - 감추다, 숨겨두다
 ```
-git stash --버전관리가 되는 파일만 가능하다.
-git stash list
-git stash apply
-git stash drop
-git stash apply; git stash drop; == git stash pop;
+$ git stash --버전관리가 되는 파일만 가능하다.
+$ git stash list
+$ git stash apply
+$ git stash drop
+$ git stash apply; git stash drop; == git stash pop;
 ```
 
 ## git diff
 : index와 working copy 내용 비교
 kdiff, beyond compare : git merge tool;
 install kdiff
-git config --global merge.tool kdiff3
-git config --global merge.tool bc
+```
+$ git config --global merge.tool kdiff3
+$ git config --global merge.tool bc
+```
 
 ## git mergetool
 
 ## remote
 ```
-git init --bare remote : bare 작업은 불가 저장만
-git init --bare remote
+$ git init --bare remote : bare 작업은 불가 저장만
+$ git init --bare remote
 local$ $ git remote add origin /c/Users/terrybyte/gitStudy/remote
 origin : /home/git/remote alias
-git remote -v
-git remote remove origin : origin remote를 제거한다.
-git push
-git push --set-upstream origin master 설정 시
-git push == git push --set-upstream origin master 동일함
-git commit -amend : 코멘트 수정
-git pull, git push : 작업전/후
+$ git remote -v
+$ git remote remove origin : origin remote를 제거한다.
+$ git push
+$ git push --set-upstream origin master 설정 시
+$ git push == git push --set-upstream origin master 동일함
+$ git commit -amend : 코멘트 수정
+$ git pull, git push : 작업 전/후
 ```
 
 ## github login by using ssh
-: ssh-keygen 개인키,공개키 생성
+$ ssh-keygen 개인키,공개키 생성
 ```
 id_rsa : private key
 id_rsa.pub : public key
