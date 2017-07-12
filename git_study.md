@@ -1,8 +1,7 @@
 # Git Study note
+## [git-scm-book-ko](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC%EB%9E%80%3F)
 
-## revert vs reset
-
-### reset
+## reset
 reset 원격지에 올리기 전에 만
 
 ```
@@ -15,7 +14,7 @@ git log
 git reset --hard commit_id
 ```
 
-#### git reset --hard 6945b65ea3165bde3d7f3eb7c03d6847f94c43e7
+### git reset --hard 6945b65ea3165bde3d7f3eb7c03d6847f94c43e7
 : 해당 커밋 시점으로 되돌아가고 해당 커밋 이후의 커밋은 삭제
 현재 브랜치의 최신 커밋을 가리킴
 ```
@@ -24,10 +23,10 @@ $ git reflog
 $ git checkout 95c1bfa01dfa26ae4f790c8fd5eb5fb75ff61b1a
 ```
 
-### revert
+## revert
 커밋 지점으로 돌아가고 새로운 버전 생성
 
-### branch
+## branch
 $ git branch : 현재 브랜치를 확인한다.
 
 ## checkout
