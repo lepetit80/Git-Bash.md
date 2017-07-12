@@ -103,3 +103,23 @@ id_rsa.pub : public key
 ```
 $ git clone git@github.com:lepetit80/Git-Bash.md.git Git-Bash.md
 ```
+
+## make remote git-server
+: 서버에 원격 저장소를 만들고 ssh를 이용하여 버전 관리
+```
+~server $ git init --bare remote
+: 원격 저장소 생성
+local $ git remote add orgin ssh://git@192.168.1.100/home/git/git-remote/
+: 로컬 저장소를 원격 저장소를 연결. "/" 를 붙여야 함.
+local $ git remote -v
+local $ git push
+local $ git push --set-upstream origin master
+
+office $ git clone ssh://git@192.168.1.100/home/git/git-remote/ git-office
+: 원격 저장소 복제
+```
+
+## #caution push & pull
+```
+: push 전, pull하여 원격지와 로컬을 동기화(충돌 처리 등)한 후 push
+```
