@@ -122,3 +122,18 @@ office $ git clone ssh://git@192.168.1.100/home/git/git-remote/ git-office
 ```
 : push 전, pull하여 원격지와 로컬을 동기화(충돌 처리 등)한 후 push
 ```
+
+## git-client
+```
+ssh-keygen -t rsa
+~/.ssh $ cat id_rsa.pub
+copy id_rsa.pub > authorized_keys
+
+~/.ssh $ ssh-copy-id git@xxx.xxx.xxx.xxx
+server authorized_keys에 public키를 복제한다.
+```
+
+## git-server
+```
+~/.ssh $ vim authorized_keys
+```
