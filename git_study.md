@@ -137,3 +137,8 @@ server authorized_keys에 public키를 복제한다.
 ```
 ~/.ssh $ vim authorized_keys
 ```
+---
+### git study - todo list
+- [ ] rebase
+- [ ] revert
+- [ ] reset
